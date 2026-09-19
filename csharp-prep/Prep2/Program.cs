@@ -1,4 +1,5 @@
 using System;
+using System.Formats.Asn1;
 using System.Security.Cryptography;
 
 class Program
@@ -14,15 +15,29 @@ class Program
 
         if (percent >= 90)
         {
-            letter = "A";
-            // Console.WriteLine($"Your Grade is: {letter}, You passed ");
-            }
-        
+        letter = "A-";
+             if (percent >= 93)
+            {
+            letter = "A";     
+                 if (percent >= 97) 
+                {
+                    letter = "A+";
+                }
+            } 
+        }
+    
         else if (percent >= 80)
         {
+        letter = "B-";
+            if (percent >= 83)
+            {
             letter = "B";
-            // Console.WriteLine($"Your Grade is: {letter}, You passed ");
-            }
+                if (percent >= 87)
+                {
+                 letter = "B+";   
+                } 
+             }
+        }
 
         else if (percent >= 70)
         {
