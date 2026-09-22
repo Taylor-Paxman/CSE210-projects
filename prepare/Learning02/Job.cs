@@ -14,7 +14,5 @@ public class Job
         
         Console.WriteLine($"{_jobtitle} ({_company}) {_startyear}-{_endyear}");
     }
-    
-
 
 }
